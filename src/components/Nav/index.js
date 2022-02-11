@@ -1,34 +1,28 @@
-import React, { useEffect } from 'react';
-// import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Nav(props) {
-  const { page = [], currentPage, setCurrentPage } = props;
-
-  // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentCategory.name);
-  // }, [currentCategory]);
-
+function Nav() {
   return (
     <ul className="nav justify-content-end flex-row">
       <li className="nav-item mx-2">
-        <a data-testid="about" href="/about" className="nav-link" onClick={() => setCurrentPage(true)}>
+        <Link data-testid="about" to="/" className="nav-link">
           About me
-        </a>
+        </Link>
       </li>
       <li className="mx-2">
-        <a data-testid="project" href="/project" className="nav-link">
+        <Link data-testid="project" to="/project" className="nav-link">
           Projects
-        </a>
+        </Link>
       </li>
       <li className={`mx-2`}>
-        <a data-testid="contact" href="/contact" className="nav-link">
+        <Link data-testid="contact" to="/contact" className="nav-link">
           Contact
-        </a>
+        </Link>
       </li>
       <li className={`mx-2 `}>
-        <a data-testid="resume" href="/resume" className="nav-link">
+        <Link data-testid="resume" to="/resume" className="nav-link">
           Resume
-        </a>
+        </Link>
       </li>
     </ul>
   );

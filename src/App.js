@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
-
-// import Project from './components/Project'
+import Project from './components/Project'
+import Resume from './components/Resume'
 
 
 function App() {
@@ -20,23 +21,31 @@ function App() {
   const [currentPage, setCurrentPage] = useState(page[0]);
 console.log(page)
   return (
-  <div>
-     <Header>
-      currentPage={currentPage}
-      setCurrentPage={setCurrentPage}
-    </Header>
-
-    <main>
-    {/* {currentPage === 'about' ( */}
-        <About></About>
-    {/* )} */}
-    {/* {currentPage === page[2] (
-      <Contact></Contact>
-    )} */}
-    </main>
-
-    <Footer></Footer>
-  </div>
+    <Router>
+      <div>
+        <Header>
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        </Header>
+        <main>
+          <Switch>
+            <Route exact path={"/"}>
+              <About></About>
+            </Route>
+            <Route path={"/project"}>
+              <Project></Project>
+            </Route>
+            <Route path={"/contact"}>
+              <Contact></Contact>
+            </Route>
+            <Route path={"/resume"}>
+              <Resume></Resume>
+            </Route>
+          </Switch>    
+        </main>
+        <Footer></Footer>
+      </div>
+    </Router>
   )
 }
 
