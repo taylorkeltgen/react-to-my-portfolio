@@ -1,24 +1,17 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
+<Navbar bg="dark" variant='dark' expand="lg">
+    <Navbar.Brand> <Link data-testid="about" to="/" className="nav-link">
+          <h1 className="link text-nowrap">Portfolio</h1>
+        </Link></Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
     <div className='container'>
       <nav className='navbar navbar-expand-md navbar-dark'>
-        <Link data-testid="about" to="/" className="nav-link">
-          <h1 className="link text-nowrap">Portfolio</h1>
-        </Link>
-        <button 
-        className='navbar-toggler'
-        type="button"
-        data-bs-toggle="collaspe"
-        data-bs-target="#toggleMobileMenu"
-        aria-controls="toggleMobileMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-          <span className='navbar-toggler-icon'></span>
-        </button>
-          <div className='collapse navbar-collapse' id='toggleMobileMenu'>
             <ul className='navbar-nav ms-auto'>
               <li>
                 <Link data-testid="about" to="/" className="nav-link">
@@ -36,14 +29,15 @@ function Nav() {
                 </Link>
               </li>
               <li>
-                <Link data-testid="resume" to="/resume" className="nav-link col-2">
+                <Link data-testid="resume" to="/resume" className="nav-link">
                   <h5 className="link">Resume</h5>
                 </Link>
               </li>
             </ul>
-          </div>
       </nav>
     </div>
+    </Navbar.Collapse>
+    </Navbar>
   );
 }
 
