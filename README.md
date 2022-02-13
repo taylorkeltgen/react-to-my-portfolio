@@ -14,6 +14,9 @@
   - Bootstrap
   - Deployed to GitHub Pages
   
+  ### Deployed Site
+  - [taylorkeltgen.github.io/react-to-my-portfolio](https://taylorkeltgen.github.io/react-to-my-portfolio)
+  
   ### Authors
   - [Taylor Keltgen](https://github.com/taylorkeltgen)
 
