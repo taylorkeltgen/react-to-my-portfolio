@@ -37,11 +37,11 @@ function ContactForm() {
   }
 
   return (
-    <section className="d-flex-column">
-      <div className="">
-        <h1>Contact me</h1>
+    <section className="">
+      <div>
+        <h1 className="page-title">Contact me</h1>
         <a href="mailto:taylorkeltgen@gmail.com">taylorkeltgen@gmail.com</a>
-        <form id="contact-form" className="my-5" onSubmit={handleSubmit}>
+        <form id="contact-form" className="container my-5" onSubmit={handleSubmit}>
           <div className="form-group row">
             <label htmlFor="name" className="col-sm-2 col-form-label">
               Name:
@@ -73,7 +73,7 @@ function ContactForm() {
           )}
           <div className="form-group row">
             <div className="col-sm-10">
-              <button type="submit" className="btn btn-outline-primary btn-lg">
+              <button type="submit" className="btn btn-outline-success btn-lg">
                 Submit
               </button>
             </div>
