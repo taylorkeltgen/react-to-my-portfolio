@@ -3,14 +3,13 @@ import Nav from '../Nav';
 
 const Header = () => {
   return (
-  <header>
-      <Nav className="container"></Nav>
+    <header>
+      <Nav></Nav>
       <section className="hero">
-      <a data-testid="link" href="/" className="nav-link">
-          Taylor Keltgen
-        </a>
-    </section>
-  </header>);
+        <h1 style={{ color: 'DeepPink' }}>Taylor Keltgen</h1>
+      </section>
+    </header>
+  );
 };
 
 export default Header;

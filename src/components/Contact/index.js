@@ -14,7 +14,6 @@ function ContactForm() {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
       console.log(isValid);
-      // isValid conditional statement
       if (!isValid) {
         setErrorMessage('Your email is invalid.');
       } else {
@@ -38,43 +37,49 @@ function ContactForm() {
   }
 
   return (
-    <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            defaultValue={message}
-            onBlur={handleChange}
-            rows="5"
-          />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
+    <section className="d-flex-column">
+      <div className="">
+        <h1>Contact me</h1>
+        <a href="mailto:taylorkeltgen@gmail.com">taylorkeltgen@gmail.com</a>
+        <form id="contact-form" className="my-5" onSubmit={handleSubmit}>
+          <div className="form-group row">
+            <label htmlFor="name" className="col-sm-2 col-form-label">
+              Name:
+            </label>
+            <div className="col-sm-10">
+              <input type="text" name="name" className="" defaultValue={name} onBlur={handleChange} />
+            </div>
           </div>
-        )}
-        <button type="submit">Submit</button>
-      </form>
+          <div className="form-group row">
+            <label htmlFor="email" className="col-sm-2 col-form-label">
+              Email address:
+            </label>
+            <div className="col-sm-10">
+              <input type="email" name="email" className="" defaultValue={email} onBlur={handleChange} />
+            </div>
+          </div>
+          <div className="form-group row">
+            <label htmlFor="message" className="col-sm-2 col-form-label">
+              Message:
+            </label>
+            <div className="col-sm-10">
+              <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+            </div>
+          </div>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          <div className="form-group row">
+            <div className="col-sm-10">
+              <button type="submit" className="btn btn-outline-primary btn-lg">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
   );
 }
