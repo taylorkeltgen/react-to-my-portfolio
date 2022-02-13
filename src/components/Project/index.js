@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import { FaGithub } from 'react-icons/fa';
+import img1 from '../../assets/images/img-1.webp';
+import img2 from '../../assets/images/img-2.webp';
+import img3 from '../../assets/images/img-3.webp';
+import img4 from '../../assets/images/img-4.webp';
+// import img5 from '../../assets/images/img-5.webp';
 
 const Project = () => {
   const [projects, setProjects] = useState([
@@ -10,6 +15,7 @@ const Project = () => {
       description: 'Full Stack Group Project',
       deployedUrl: 'https://want-to-buy.herokuapp.com/',
       gitHubRepo: 'https://github.com/taylorkeltgen/want-to-buy',
+      image: img1,
     },
     {
       id: 2,
@@ -17,6 +23,7 @@ const Project = () => {
       description: 'Front-end Group Project',
       deployedUrl: 'https://smashercoder.github.io/hotel-raven/',
       gitHubRepo: 'https://github.com/SmasherCoder/hotel-raven',
+      image: img2,
     },
     {
       id: 3,
@@ -24,6 +31,7 @@ const Project = () => {
       description: 'Javascript Game',
       deployedUrl: 'https://taylorkeltgen.github.io/robot-gladiators/',
       gitHubRepo: 'https://github.com/taylorkeltgen/robot-gladiators',
+      image: img3,
     },
     {
       id: 4,
@@ -31,6 +39,7 @@ const Project = () => {
       description: 'HTML/CSS',
       deployedUrl: 'https://taylorkeltgen.github.io/run-buddy/',
       gitHubRepo: 'https://github.com/taylorkeltgen/run-buddy',
+      image: img4,
     },
   ]);
 
@@ -39,7 +48,7 @@ const Project = () => {
       <h1 className="page-title">Projects</h1>
       {projects.map((proj) => (
         <Card key={proj.id} className="d-flex bg-dark m-4 text-white">
-          <Card.Img src={`./assets/images/img-${proj.id}.webp`} alt="Card image" className="card-img" />
+          <Card.Img src={proj.image} alt="Card image" className="card-img" />
           <Card.ImgOverlay className="card-img-overlay">
             <Card.Title className="card-title">
               <a href={proj.deployedUrl} target="_blank" rel="noopener noreferrer" className="pink mx-2">
