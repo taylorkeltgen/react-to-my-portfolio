@@ -1,18 +1,17 @@
 import React from 'react';
+import portrait from '../../assets/images/portrait.webp';
+
 
 function About() {
   return (
-    <section className="">
-      <h1 id="about" className="page-title">
+    <section className="container">
+      <h1 id="about" className="page-title ">
         About Me
       </h1>
+      <img className='' src={portrait} alt="self portrait" width={250} height={300} />
       <div className="my-2">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut
-          ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean
-          sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis.
-          In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies
-          mollis. In hac habitasse platea dictumst.
+          Hi my name is Taylor Keltgen
         </p>
       </div>
     </section>

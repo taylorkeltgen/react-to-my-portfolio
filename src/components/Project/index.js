@@ -5,10 +5,18 @@ import img1 from '../../assets/images/img-1.webp';
 import img2 from '../../assets/images/img-2.webp';
 import img3 from '../../assets/images/img-3.webp';
 import img4 from '../../assets/images/img-4.webp';
-// import img5 from '../../assets/images/img-5.webp';
+import img5 from '../../assets/images/img-5.webp';
 
 const Project = () => {
   const [projects, setProjects] = useState([
+    {
+      id: 0,
+      title: 'Marvelous',
+      description: 'MERN - Full Stack Group Project',
+      deployedUrl: 'https://marvelous-mern.herokuapp.com/',
+      gitHubRepo: 'https://github.com/taylorkeltgen/marvelous',
+      image: img5,
+    },
     {
       id: 1,
       title: 'Want To Buy',
