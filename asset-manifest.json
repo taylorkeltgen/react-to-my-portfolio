@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/react-to-my-portfolio/static/css/main.486d6170.css",
-    "main.js": "/react-to-my-portfolio/static/js/main.8b63447e.js",
+    "main.js": "/react-to-my-portfolio/static/js/main.d9aeffdd.js",
     "static/js/787.4fb3532e.chunk.js": "/react-to-my-portfolio/static/js/787.4fb3532e.chunk.js",
     "static/media/img-1.webp": "/react-to-my-portfolio/static/media/img-1.664936907444e372158c.webp",
     "static/media/img-4.webp": "/react-to-my-portfolio/static/media/img-4.000e1b5ff4f0b912c97f.webp",
+    "static/media/img-5.webp": "/react-to-my-portfolio/static/media/img-5.7e0cf428b3268f443eae.webp",
     "static/media/bg-hero.png": "/react-to-my-portfolio/static/media/bg-hero.1b03d17da23805810922.png",
     "static/media/img-2.webp": "/react-to-my-portfolio/static/media/img-2.3d5d79ec2330b3756972.webp",
+    "static/media/portrait.webp": "/react-to-my-portfolio/static/media/portrait.3ae51e3cd239019e8527.webp",
     "static/media/img-3.webp": "/react-to-my-portfolio/static/media/img-3.dd6c719e8ad46b6f3706.webp",
     "index.html": "/react-to-my-portfolio/index.html",
     "static/media/resume.txt": "/react-to-my-portfolio/static/media/resume.058ab7a86f7896161a72.txt",
     "main.486d6170.css.map": "/react-to-my-portfolio/static/css/main.486d6170.css.map",
-    "main.8b63447e.js.map": "/react-to-my-portfolio/static/js/main.8b63447e.js.map",
+    "main.d9aeffdd.js.map": "/react-to-my-portfolio/static/js/main.d9aeffdd.js.map",
     "787.4fb3532e.chunk.js.map": "/react-to-my-portfolio/static/js/787.4fb3532e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.486d6170.css",
-    "static/js/main.8b63447e.js"
+    "static/js/main.d9aeffdd.js"
   ]
 }
