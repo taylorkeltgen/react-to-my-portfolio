@@ -26,11 +26,11 @@ function Nav() {
                   <h5 className="pink">Projects</h5>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link data-testid="contact" to="/contact" className="nav-link">
                   <h5 className="pink">Contact</h5>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link data-testid="resume" to="/resume" className="nav-link">
                   <h5 className="pink">Resume</h5>

@@ -23,15 +23,16 @@ const Resume = () => {
             <li>jQuery</li>
             <li>Responsive Design</li>
             <li>Bootstrap</li>
-            <li>React</li>
+            <li>React.js</li>
           </ul>
         </div>
         <div>
           <h2>Back-end Proficiencies</h2>
           <ul>
-            <li>APIs</li>
-            <li>Node</li>
-            <li>Express</li>
+            <li>JavaScript</li>
+            <li>API Fetching</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
             <li>MySQL, Sequelize</li>
             <li>MongoDB</li>
             <li>GraphQL</li>
