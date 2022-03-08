@@ -10,7 +10,7 @@ import Resume from './components/Resume';
 
 function App() {
   return (
-    <Router basename="react-to-my-portfolio/">
+    <Router>
       <div className="base">
         <Header></Header>
         <main className="container my-5">
