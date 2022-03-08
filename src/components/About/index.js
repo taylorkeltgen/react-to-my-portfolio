@@ -8,7 +8,7 @@ function About() {
         <h2 id="about" className="page-title ">
           About Me
         </h2>
-        <img className="my-4" src={portrait} alt="self portrait" width={250} height={300} />
+        <img style={{ borderRadius: '25%' }} className="my-4" src={portrait} alt="self portrait" width={250} height={300} />
       </div>
       <div className="my-2">
         <p>
