@@ -1,12 +1,12 @@
 import React from 'react';
-import resume from '../../assets/resume.txt';
+import resume from '../../assets/Resume_Taylor_Keltgen_2022.pdf';
 
 const Resume = () => {
   return (
     <div className="d-flex-column">
       <div>
         <h2 className="page-title">Resume</h2>
-        <p>
+        <p className='mt-4'>
           Download my{' '}
           <a href={resume} download="Taylor_Keltgen_Resume">
             resume
@@ -14,7 +14,7 @@ const Resume = () => {
         </p>
       </div>
      
-      <div className="container mx-1">
+      <div className="container my-5 mx-1">
         <div>
           <h4>Coding Langages Known</h4>
           <ul>
