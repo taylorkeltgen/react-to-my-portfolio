@@ -59,7 +59,8 @@ const Project = () => {
 
   return (
     <div className="">
-      <h1 className="page-title">Projects</h1>
+      <h2 className="page-title">Projects</h2>
+      <p className='text-center mt-5'>Hover over a project to see links to the deployed site or GitHub repo.</p>
       {projects.map((proj) => (
         <Card key={proj.id} className="d-flex bg-dark m-4 text-white">
           <Card.Img src={proj.image} alt="Card image" className="card-img" />
@@ -78,6 +79,7 @@ const Project = () => {
           </Card.ImgOverlay>
         </Card>
       ))}
+      <p className='text-center mt-5'>More to come..</p>
     </div>
   );
 };

@@ -39,7 +39,7 @@ function ContactForm() {
   return (
     <section className="">
       <div>
-        <h1 className="page-title">Contact me</h1>
+        <h2 className="page-title">Contact me</h2>
         <a href="mailto:taylorkeltgen@gmail.com">taylorkeltgen@gmail.com</a>
         <form id="contact-form" className="container my-5" onSubmit={handleSubmit}>
           <div className="form-group row">
