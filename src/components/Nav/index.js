@@ -18,7 +18,7 @@ function Nav() {
             <ul className="navbar-nav ms-auto">
               <li>
                 <Link data-testid="about" to="/" className="nav-link">
-                  <h5 className="pink text-nowrap">About me</h5>
+                  <h5 className="pink text-nowrap">About Me</h5>
                 </Link>
               </li>
               <li>
