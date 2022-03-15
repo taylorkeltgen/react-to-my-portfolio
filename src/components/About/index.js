@@ -17,7 +17,8 @@ function About() {
           Coding Bootcamp for Full Stack Web Development, and I am ready to start my new career journey in the development field.
           <br />
           <br />
-          Some of my strengths include: agility, resourcefulness, adaptability, problem solving, leadership, self-improvment, and a broad perspective.
+          Some of my strengths include: agility, resourcefulness, adaptability, problem solving, leadership, self-improvement, and a broad
+          perspective.
         </p>
       </div>
     </section>
