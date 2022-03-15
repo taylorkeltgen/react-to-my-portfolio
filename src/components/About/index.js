@@ -12,13 +12,12 @@ function About() {
       </div>
       <div className="my-2">
         <p>
-          Hi my name is Taylor Keltgen. I am an aspiring Developer currently working in an IT Support role at the University of Texas at Austin. I
+          Hi my name is Taylor Keltgen. I am an aspiring developer currently working in an IT Support role at the University of Texas at Austin. I
           have strong desire to learn and create new things, and I love problem solving. I have just completed the University of Texas at Austin
-          Coding Bootcamp for Full Stack Web Development, and I am ready to start my new career journey in the Development field.
+          Coding Bootcamp for Full Stack Web Development, and I am ready to start my new career journey in the development field.
           <br />
           <br />
-          Some of my strengths include high adaptibility, quick learning, a problem solving mentality, the ability to view things from a wide lens, a
-          leadership mentality, and a strong desire to always improve.
+          Some of my strengths include: agility, resourcefulness, adaptability, problem solving, leadership, self-improvment, and a broad perspective.
         </p>
       </div>
     </section>
